@@ -1,9 +1,6 @@
 import {configureStore} from "./store";
-
-const rootReducer = combineReducers({
-    account: accountReducer,
-    customer: customerReducer,
-});
+import accountReducer from "./features/accounts/accountSlice";
+import customerReducer from "./features/customers/customerSlice";
 
 configureStore({
     reducer:{
