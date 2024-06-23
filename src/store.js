@@ -5,6 +5,11 @@ const rootReducer = combineReducers({
     customer: customerReducer,
 });
 
-configureStore({})
+configureStore({
+    reducer:{
+        account: accountReducer,
+        customer: customerReducer,
+    }
+})
 
     export default store;
